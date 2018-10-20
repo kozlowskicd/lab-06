@@ -2,56 +2,100 @@
   "categories": [
     {
       "_id": 1,
-      "name": "this",
-      "display_name": "Category 1 Display Name",
+      "name": "Fruits",
+      "display_name": "Fruits",
       "description": "Description for Category 1"
     },
     {
       "_id": 2,
-      "name": "that",
-      "display_name": "Category 2 Display Name",
+      "name": "Vegetables",
+      "display_name": "Vegetables",
       "description": "Description for Category 2"
     },
     {
       "_id": 3,
-      "name": "Category 3 Name",
-      "display_name": "Category 3 Display Name",
+      "name": "Dairy",
+      "display_name": "Dairy",
       "description": "Description for Category 3"
     },
     {
-      "name": "test",
-      "_id": 4
-    },
-    {
-      "name": "testtes",
-      "_id": 5
-    },
-    {
-      "_method": "delete",
-      "_id": 6
+      "_id": 4,
+      "name": "Meats",
+      "display_name": "Meat",
+      "description": "Description for Category 4"
     }
   ],
+
   "products": [
     {
       "_id": 1,
-      "category": "this",
-      "name": "Product 1 Name",
-      "display_name": "Product 1 Display Name",
+      "category": "Fruits",
+      "name": "Bananas",
+      "display_name": "Bananas",
       "description": "Product 1 Description"
     },
     {
-      "_id": 1,
-      "category": "this",
-      "name": "Product 2 Name",
-      "display_name": "Product 2 Display Name",
+      "_id": 2,
+      "category": "Fruits",
+      "name": "Apples",
+      "display_name": "Apples",
       "description": "Product 2 Description"
     },
     {
-      "_id": 1,
-      "category": "that",
-      "name": "Product 3 Name",
-      "display_name": "Product 3 Display Name",
+      "_id": 3,
+      "category": "Fruits",
+      "name": "Blueberries",
+      "display_name": "Blueberries",
       "description": "Product 3 Description"
+    },
+    {
+      "_id": 4,
+      "category": "Vegetables",
+      "name": "Carrots",
+      "display_name": "Carrots",
+      "description": "Product 4 Description"
+    },
+    {
+      "_id": 5,
+      "category": "Vegetables",
+      "name": "Radishes",
+      "display_name": "Radishes",
+      "description": "Product 5 Description"
+    },
+    {
+      "_id": 6,
+      "category": "Dairy",
+      "name": "Cheese",
+      "display_name": "Cheese",
+      "description": "Product 6 Description"
+    },
+    {
+      "_id": 7,
+      "category": "Dairy",
+      "name": "Milkshake",
+      "display_name": "Milkshake",
+      "description": "Product 7 Description"
+    },
+    {
+      "_id": 8,
+      "category": "Meats",
+      "name": "Beef",
+      "display_name": "Beef",
+      "description": "Product 8 Description"
+    },
+    {
+      "_id": 9,
+      "category": "Meats",
+      "name": "Chicken",
+      "display_name": "Chicken",
+      "description": "Product 9 Description"
+    },
+    {
+      "_id": 10,
+      "category": "Meats",
+      "name": "Ham",
+      "display_name": "Ham",
+      "description": "Product 10 Description"
     }
   ]
 }
