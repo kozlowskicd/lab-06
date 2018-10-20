@@ -1,45 +1,57 @@
 {
-    "categories": [
-      {
-          "_id": 1,
-        "name": "Category 1 Name",
-        "display_name": "Category 1 Display Name",
-        "description": "Description for Category 1"
-      },
-      {
-        "_id": 2,
-        "name": "Category 2 Name",
-        "display_name": "Category 2 Display Name",
-        "description": "Description for Category 2"
-      },
-      {
-        "_id": 3,
-        "name": "Category 3 Name",
-        "display_name": "Category 3 Display Name",
-        "description": "Description for Category 3"
-      }
-    ],
-    "products": [
-      {
-        "_id": 1,
-        "category": "Product 1 Category",
-        "name": "Product 1 Name",
-        "display_name": "Product 1 Display Name",
-        "description": "Product 1 Description"
-      },
-      {
-        "_id": 1,
-        "category": "Product 2 Category",
-        "name": "Product 2 Name",
-        "display_name": "Product 2 Display Name",
-        "description": "Product 2 Description"
-      },
-      {
-        "_id": 1,
-        "category": "Product 3 Category",
-        "name": "Product 3 Name",
-        "display_name": "Product 3 Display Name",
-        "description": "Product 3 Description"
-      }
-    ]
-  }
+  "categories": [
+    {
+      "_id": 1,
+      "name": "this",
+      "display_name": "Category 1 Display Name",
+      "description": "Description for Category 1"
+    },
+    {
+      "_id": 2,
+      "name": "that",
+      "display_name": "Category 2 Display Name",
+      "description": "Description for Category 2"
+    },
+    {
+      "_id": 3,
+      "name": "Category 3 Name",
+      "display_name": "Category 3 Display Name",
+      "description": "Description for Category 3"
+    },
+    {
+      "name": "test",
+      "_id": 4
+    },
+    {
+      "name": "testtes",
+      "_id": 5
+    },
+    {
+      "_method": "delete",
+      "_id": 6
+    }
+  ],
+  "products": [
+    {
+      "_id": 1,
+      "category": "this",
+      "name": "Product 1 Name",
+      "display_name": "Product 1 Display Name",
+      "description": "Product 1 Description"
+    },
+    {
+      "_id": 1,
+      "category": "this",
+      "name": "Product 2 Name",
+      "display_name": "Product 2 Display Name",
+      "description": "Product 2 Description"
+    },
+    {
+      "_id": 1,
+      "category": "that",
+      "name": "Product 3 Name",
+      "display_name": "Product 3 Display Name",
+      "description": "Product 3 Description"
+    }
+  ]
+}

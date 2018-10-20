@@ -3,6 +3,6 @@
 <p>List of all Categories</p>
 <ul>
     <% categories.forEach(cat => { %>
-        <li><%= cat.name %></li>
+        <li><a href='/products/<%= cat.name %>'><%= cat.name %></a></li>
     <% }) %>
 </ul>

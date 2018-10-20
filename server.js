@@ -4,15 +4,13 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 const superagent = require('superagent');
-const PORT = process.env.PORT;
 const API = process.env.API_URL;
 
 app.set('view engine', 'ejs');
 app.use(express.static('./public'));
-
 app.get('/', renderHomepage);
 app.get('/categories', renderAllCategories);
-app.get('/categories:name', renderTheseProducts);
+app.get('/products/:categoryName', renderTheseProducts);
 
 function renderHomepage(req, res) {
   res.render('site', {page:'./pages/index', title:'Homepage'});
@@ -25,8 +23,17 @@ function renderAllCategories(req, res) {
     .catch(err => console.log(err));
 }
 function renderTheseProducts(req, res) {
-  res.render('site', {page:'./pages/products', title:'Products'});
+  superagent.get(`${API}/products?category=${req.params.categoryName}`)
+    .then(data => {
+      res.render('site', {page:'./pages/products', title:'Products', products:data.body});
+    })
+    .catch(err => console.log(err));
 }
-app.listen(PORT, () => {
-  console.log(`Server listening on port: ${PORT}`);
-});
+
+module.exports = {
+  server: app,
+  start: port => {
+    let PORT = port || process.env.PORT || 8080;
+    app.listen(PORT, () => console.log(`Listening on ${PORT}`));
+  },
+};
