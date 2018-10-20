@@ -4,7 +4,8 @@
   "description": "![CF](http://i.imgur.com/7v5ASc8.png) LAB: HTTP and REST ========================================================",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --coverage",
+    "lint": "npm run eslint"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   "dependencies": {
     "dotenv": "^6.1.0",
     "ejs": "^2.6.1",
+    "eslint": "^5.7.0",
     "express": "^4.16.4",
     "superagent": "^4.0.0-beta.5",
     "supertest": "^3.3.0"
