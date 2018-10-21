@@ -12,9 +12,11 @@ app.get('/', renderHomepage);
 app.get('/categories', renderAllCategories);
 app.get('/products/:categoryName', renderTheseProducts);
 
+// Async function to render homepage.  Takes request and response parameters and renders the site when the home address is called.
 function renderHomepage(req, res) {
   res.render('site', {page:'./pages/index', title:'Homepage'});
 }
+// Async function to show all categories.  Takes request and response parameters.  Queries all categories from the DB and renders the site with all categories listed.
 function renderAllCategories(req, res) {
   superagent.get(`${API}/categories`)
     .then(data => {
@@ -22,6 +24,7 @@ function renderAllCategories(req, res) {
     })
     .catch(err => console.log(err));
 }
+//Async function to show the products of a specific category.  Takes request and response parameters.  Takes the name of a clicked category and queries the DB with that name.  Returns all products that share that category name.
 function renderTheseProducts(req, res) {
   superagent.get(`${API}/products?category=${req.params.categoryName}`)
     .then(data => {
@@ -30,6 +33,7 @@ function renderTheseProducts(req, res) {
     .catch(err => console.log(err));
 }
 
+// This exports a server start function, and sets the outside variable server to be equivalent to app.
 module.exports = {
   server: app,
   start: port => {

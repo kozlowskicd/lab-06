@@ -11,7 +11,6 @@ describe('API call tests', () => {
       .then(results => expect(200))
       .catch((err) => {
         console.log(err);
-        done(err);
       });
   });
 
